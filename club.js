@@ -1,45 +1,39 @@
-$(function(){
-
-
-//（１）ページの概念・初期ページを設定
-var page=0;
-
-//（２）イメージの数を最後のページ数として変数化
-var lastPage =parseInt($("#slide img").length-1);
-
-//（３）最初に全部のイメージを一旦非表示にします
-     $("#slide img").css("display","none");
-
-//（４）初期ページを表示
-          $("#slide img").eq(page).css("display","block");
-
-//（５）ページ切換用、自作関数作成
-function changePage(){
-                         $("#slide img").fadeOut(1000);
-                         $("#slide img").eq(page).fadeIn(1000);
-};
-
-//（６）～秒間隔でイメージ切換の発火設定
-var Timer;
-function startTimer(){
-Timer =setInterval(function(){
-          if(page === lastPage){
-                         page = 0;
-                         changePage();
-               }else{
-                         page ++;
-                         changePage();
-          };
-     },5000);
-}
-//（７）～秒間隔でイメージ切換の停止設定
-function stopTimer(){
-clearInterval(Timer);
-}
-
-//（８）タイマースタート
-startTimer();
-
-/*オプションを足す場合はここへ記載*/
-
-});
+;(function (d, $) {
+ 
+  var jQdm_slideMenu;
+ 
+  jQdm_slideMenu = function(){
+ 
+    var prop = {
+        deferredImage: 'img.deferred',
+        subContainer: '#subContainer',
+        mainNavigation_trigger: '.mainNavigation_trigger',
+        mainNavigation_appear: '.appeared'
+    }
+ 
+    function init(){
+ 
+        $(prop.deferredImage).lazyload({
+            threshold : 10,
+            effect: 'fadeIn',
+            effectspeed: 1000
+        });
+ 
+        $(prop.mainNavigation_trigger).find('a').on('click', function(){
+            $(prop.subContainer).toggleClass(replaceString(prop.mainNavigation_appear));
+        });
+ 
+     }
+ 
+    function replaceString(_str, _bf, _af, _flg){
+      var _reg = new RegExp(_bf || '[\\.#]', _flg || '');
+      return _str ? _str.replace(_reg, _af || '') : false;
+    }
+ 
+    init();
+ 
+  };
+ 
+  jQdm_slideMenu();
+ 
+})(document, jQuery);
