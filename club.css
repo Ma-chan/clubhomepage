@@ -6,7 +6,6 @@ background-color: #fff;
 width:100%;
     height:100px;
 border-bottom: 1px solid #000; /* ヘッダーの境界線（下部）を指定する */
-	box-shadow:0 7px 10px 2px #aaaaaa;
 margin:0;
     padding: 0;
 }
@@ -27,137 +26,6 @@ h1 {
 }
 h1 a {text-decoration:none;} 	
 
-#menu {
-  padding:0;
-    margin: 0;
-  list-style-type: none;
-}
-#menu li {
-    position: relative;z-index: auto
-        height:100px;
-  width:200px;
-  float:left;
-  padding:0;
-  text-align:center;
-}
-#menu li a {
-    text-shadow:0 -1px 0px #333,0 1px 0px #555;
-
-    border-left:1px solid #444;
-  box-shadow: 1px 0px 0px rgba(225,225,225,0.3) inset,
-             -1px 0px 0px rgba(225,225,225,0.3) inset,
-              0px 1px 1px rgba(0,0,0,0.1) inset,
-              0px -1px 1px rgba(0,0,0,0.3) inset,
-              0px 1px 3px #666;
-    
-    width: auto;
-  color:#fff;
-  font-size:12px;
-  font-weight:bold;
-  padding:10px 20px;
-  text-decoration:none;
-     
-  display:block;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#58ACFA), to(#2E64FE));
-  background: -moz-linear-gradient(top,#58ACFA, #2E64FE);
-      
-}
-	#menu li:first-child a{
-         position: relative;z-index: 10;
-  border-radius: 5px 0 0 5px;
-        
-        
-        
-         border-left:0;
-  box-shadow:-1px 0px 0px rgba(225,225,225,0.3) inset,
-              0px 1px 1px rgba(0,0,0,0.1) inset,
-              0px -1px 1px rgba(0,0,0,0.3) inset,
-              0px 1px 3px #2E64FE;
-
-}
-#menu li:last-child a{
-  border-radius:0 5px 5px 0;
-    
-     position: relative;z-index: 10;
-    box-shadow: 1px 0px 0px rgba(225,225,225,0.3) inset,
-              0px 1px 1px rgba(0,0,0,0.1) inset,
-              0px -1px 1px rgba(0,0,0,0.3) inset,
-              0px 1px 3px #2E64FE;
-
-}
-#menu li a:hover {
-     position: relative;z-index: 10;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#6666FF), to(#0066CC));
-  background: -moz-linear-gradient(top,#6666FF , #0066CC);
-    
-    box-shadow: 1px 0px 0px rgba(225,225,225,0) inset,
-             -1px 0px 0px rgba(225,225,225,0) inset,
-              0px 1px 1px rgba(0,0,0,0.1) inset,
-              0px -1px 1px rgba(0,0,0,0.3) inset,
-              0px 1px 3px #2E64FE;
-
-        
-}
-
-
-#menu li ul{
-  list-style: none;
-  position: absolute;z-index: 10;
-  top: 100%;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  border-radius: 0 0 3px 3px;
-}
-#menu li:last-child ul{
-  left: -100%;
-  width: 100%
-}
-#menu li ul li{
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  color: #000;
-  -moz-transition: .2s;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  -ms-transition: .2s;
-  transition: .2s;
-}
-#menu li ul li a{
-
-  padding: 13px 15px;
-
-  background: #CEF6F5;
-
-  text-align: left;
-     text-shadow:none;
-color: #000;
-  font-size: 12px;
-
-  font-weight: normal;
-     
-}
-#menu li:hover ul li{
-    background-color: cornflowerblue;
-  overflow: visible;
-  height: 38px;
-  border-top: 1px solid #00BFFF;
-  border-bottom: 1px solid #00BFFF;
-    
-}
-#menu li:hover ul li:first-child{
-  border-top: 0;
- 
-   
-}
-#menu li:hover ul li:last-child{
-  border-bottom: 0;
-    
- 
-}
-#menu li:hover ul li:last-child a{
-  border-radius: 0 0 3px 3px;
     
 }
 /*ギャラリー全体のコンテナー*/
@@ -299,31 +167,6 @@ footer address{
         
 }
 
-a.bt-samp58{  /* 全ボタン共通設定 */
-  display: inline-block;
-  height: 30px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  font-size: 15px;
-  line-height: 32px;
-  overflow: hidden;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  transition: 0.3s;
-    border-radius: 10px;
-}
-a.bt-samp58-tw{  /* ツイッター */
-  width: 150px;
-  background: #55ACEE;
-}
-
-a.bt-samp58:hover{
-  opacity: 0.5;
-}
-
 .frame {
 display: inline-block;
 position: relative;
@@ -397,53 +240,8 @@ div.position3{
     top: 50px;
     left: 300px;
 }
-.twitter-btn {
-font: normal normal normal 13px/26px 'Helvetica Neue',Arial,sans-serif;
-height: 28px;
-border-radius: 4px;
-max-width: 100%;
-box-sizing: border-box;
-position: relative;
-    left: 650px;
-    top:220px;
-background-color: #F8F8F8;
-background-image: -webkit-gradient(linear,left top,left bottom,from(#FFF),to(#DEDEDE));
-background-image: -moz-linear-gradient(top,#FFF,#DEDEDE);
-background-image: -o-linear-gradient(top,#FFF,#DEDEDE);
-background-image: -ms-linear-gradient(top,#FFF,#DEDEDE);
-background-image: linear-gradient(top,#FFF,#DEDEDE);
-border: #CCC solid 1px;
-color: #333;
-font-weight: bold;
-text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
--webkit-user-select: none;
--moz-user-select: none;
--o-user-select: none;
-user-select: none;
-cursor: pointer;
-overflow: hidden;
-display: inline-block;
-vertical-align: top;
-zoom: 1;
-text-decoration: none;
-}
-.twitter-btn:hover {
-text-decoration: none;
-}
-.twitter-btn i {
-width: 21px;
-height: 16px;
-left: 4px;
-margin-top: -6px;
-position: absolute;
-top: 50%;
-background: rgba(0, 0, 0, 0) url(data:image/png;base64,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) 0 0 no-repeat;
-background-position: -24px 0;
-}
-.twitter-btn .label {
-padding: 0 7px 0 29px;
-white-space: nowrap;
-}
+
+
 
 .zettai {
   position: absolute;
@@ -568,48 +366,6 @@ body {
 
 #mainNavigation .nav_bookmark a {
   padding-left: 1.8em;
-}
-
-#mainNavigation .nav_search a:hover {
-  /* Searchの色 */
-  color: #717FE7;
-  border-color: #717FE7;
-  background-color: #F4F5FF;
-}
-
-#mainNavigation .nav_bookmark a:hover {
-  /* Bookmarkの色 */
-  color: #FFB15C;
-  border-color: #FFB15C;
-  background-color: #FFF3E7;
-}
-
-#mainNavigation .nav_tags a:hover {
-  /* Tagsの色 */
-  color: #7AD8E9;
-  border-color: #7AD8E9;
-  background-color: #F7FBFF;
-}
-
-#mainNavigation .nav_heart a:hover {
-  /* Heartの色 */
-  color: #FF93FB;
-  border-color: #FF93FB;
-  background-color: #FCF0FB;
-}
-
-#mainNavigation .nav_comment a:hover {
-  /* Commentの色 */
-  color: #73DF50;
-  border-color: #73DF50;
-  background-color: #F3FFEF;
-}
-
-#mainNavigation .nav_gear a:hover {
-  /* Gearの色 */
-  color: #E2C528;
-  border-color: #E2C528;
-  background-color: #FFFdEa;
 }
 
 #mainNavigation .mainNavigation_trigger {
