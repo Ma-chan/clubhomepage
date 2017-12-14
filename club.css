@@ -265,6 +265,10 @@ body {
 
 
 
+/*↓リンクの下線はなし、マウスオンで下線あり*/
+a { text-decoration: none;}
+a:hover { text-decoration: underline;}
+
 /*
 独自スタイル
 */
