@@ -23,6 +23,7 @@ $('.slider').slick({
   fade: false,
   // 左右の次へ、前へボタンを表示するかどうか
   arrows: true,
+  z-index 30;
   // 無限スクロールにするかどうか。最後の画像の次は最初の画像が表示される。
   infinite: true,
   // 最初のスライダーの位置
