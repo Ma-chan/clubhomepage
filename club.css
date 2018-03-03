@@ -4,15 +4,16 @@ header {
     top:0px;
 background-color: #fff;
 width:100%;
+	img.logo1{
+		position:; top:0px; left:10px; z-index: 9000; width: 10px;
+height: auto;
+	}
     height:100px;
 border-bottom: 1px solid #000; /* ヘッダーの境界線（下部）を指定する */
 	box-shadow:0 7px 10px 2px #aaaaaa;
 margin:0;
     padding: 0;
-	img.logo1{
-		position:; top:0px; left:10px; z-index: 9000; width: 10px;
-height: auto;
-	}
+	
 }
 
 
