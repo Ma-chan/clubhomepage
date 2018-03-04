@@ -12,9 +12,17 @@ margin:0;
     padding: 0;
 	
 }
-	position:; top:0px; left:10px; z-index: 9000; width: 10px;
-height: auto;
-	}
+	
+
+logo{
+ width: 40px;/*画像の横幅*/
+ height: auto;/*画像の高さ*/
+ background: url(IMG_1251.jpg) no-repeat;
+ /*background: url(画像パス) no-repeat !important; 強制的に合わせる場合*/
+}
+logo a{
+ display: none; /*元あった文字はこれで消す*/
+}
 
 h1 {
     color: #045FB4;
