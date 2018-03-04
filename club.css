@@ -1,5 +1,5 @@
 header {
-    z-index: ;
+    z-index: 200;
     position: fixed;
     top:0px;
 background-color: #fff;
@@ -15,10 +15,13 @@ margin:0;
 	
 
 logo{
+z-index: 300;
  width: 40px;/*画像の横幅*/
  height: auto;/*画像の高さ*/
  background: url(IMG_1251.jpg) no-repeat;
+	
  /*background: url(画像パス) no-repeat !important; 強制的に合わせる場合*/
+	
 }
 logo a{
  display: none; /*元あった文字はこれで消す*/
