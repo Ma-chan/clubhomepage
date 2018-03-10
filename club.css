@@ -229,7 +229,9 @@ div.position3{
     left: 300px;
 }
 
-
+div.position{
+position: center;
+}
 .zettai {
   position: absolute;
   top: 70px;
