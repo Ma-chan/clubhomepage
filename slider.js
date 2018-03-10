@@ -1,6 +1,8 @@
 $('.slider').slick();
 
 $('.slider').slick({
+  width:200px;
+  height:auto;
   // アクセシビリティ。左右ボタンで画像の切り替えをできるかどうか
   accessibility: true,
   // 自動再生。trueで自動再生される。
