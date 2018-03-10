@@ -1,8 +1,7 @@
 $('.slider').slick();
 
 $('.slider').slick({
-  width:200px;
-  height:auto;
+  
   // アクセシビリティ。左右ボタンで画像の切り替えをできるかどうか
   accessibility: true,
   // 自動再生。trueで自動再生される。
@@ -26,7 +25,7 @@ $('.slider').slick({
   // 左右の次へ、前へボタンを表示するかどうか
   
   // 無限スクロールにするかどうか。最後の画像の次は最初の画像が表示される。
-  infinite: true,
+  infinite: center,
   // 最初のスライダーの位置
   initialSlide: 0,
   // 画像の遅延表示。‘ondemand’or'progressive'
