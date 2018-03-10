@@ -58,10 +58,11 @@ h1 a {text-decoration:none;}
 }
 /*表示写真の初期配置（全部透明に）とtransition(fade)設定*/
 .photo {
-	position: absolute;
+	position: center;
+	height: 100px;
+	width:120px;
 	top:50px;
-  left: 10px;
-
+        left: 10px;
 }
 .photo img {
 	width:100%;
