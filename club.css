@@ -56,26 +56,7 @@ h1 a {text-decoration:none;}
 #thumbs img {
 	width:9.6%;
 }
-/*表示写真の初期配置（全部透明に）とtransition(fade)設定*/
-.photo {
-	position: center;
-	height: 100px;
-	width:120px;
-	top:50px;
-        left: 10px;
-}
-.photo img {
-	width:100%;
-	opacity: 0;
-	-webkit-transition: opacity 1s ease;
-	-moz-transition: opacity 1s ease;
-	-o-transition: opacity 1s ease;
-	transition: opacity 1s ease;
-}
-/* クリックされたサムネイルの対応写真を表示 */
-.photo:target > img {
-	opacity:1; 
-}
+
 
 /* サムネイル群の左右往復animation */
 @keyframes recipro {
@@ -98,10 +79,10 @@ footer address{
 }
 
 .item {
-    position: absolute;
-    height: 55px;
-background-color:rgba(255,255,255,0.5);
-width:120px;
+    	position: absolute;
+    	height: 55px;
+	background-color:rgba(255,255,255,0.5);
+	width:120px;
 }
 
 .box5 {
