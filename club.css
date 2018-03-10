@@ -1,38 +1,37 @@
+@charset "UTF-8";
+
 header {
-    z-index: 200;
-    position: fixed;
-    top:0px;
-background-color: #fff;
-width:100%;
-	
-    height:100px;
-border-bottom: 1px solid #000; /* ヘッダーの境界線（下部）を指定する */
+    	z-index: 200;
+    	position: fixed;
+    	top:0px;
+	background-color: #fff;
+	width:100%;
+	height:100px;
+	border-bottom: 1px solid #000; /* ヘッダーの境界線（下部）を指定する */
 	box-shadow:0 7px 10px 2px #aaaaaa;
-margin:0;
-    padding: 0;
-	
+	margin:0;
+    	padding: 0;
 }
 	
 
 logo{
 z-index: 300;
- width: 40px;/*画像の横幅*/
- height: auto;/*画像の高さ*/
+ width: 40px;
+ height: auto;
  background: url(IMG_1251.jpg) no-repeat;
-	
- /*background: url(画像パス) no-repeat !important; 強制的に合わせる場合*/
-	
 }
+
 logo a{
- display: none; /*元あった文字はこれで消す*/
+ display: none;
 }
 
 h1 {
-    color: #045FB4;
-    font-size: 20px;
+    	color: #045FB4;
+    	font-size: 20px;
 	padding:13px 5px 5px 35px;		/*見出し内容の位置調整*/
    
 }
+
 h1 a {text-decoration:none;} 	
 
 /*ギャラリー全体のコンテナー*/
@@ -156,7 +155,6 @@ footer address{
         
 }
 
-
 .frame {
 display: inline-block;
 position: relative;
@@ -170,7 +168,7 @@ left: 0;
 width: 100%;
 height: 100%;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-transform: rotate(3deg); /* 回転させる */
+transform: rotate(3deg);
 background: #fff;
 z-index: -1;
 }
@@ -238,11 +236,6 @@ div.position3{
   left: 100px;
 }
 
-@charset "UTF-8";
-/*
-style.css
-*/
-
 body {
   position: relative;
   font-size: 62.5%;
@@ -250,13 +243,6 @@ body {
   margin: 0;
   background: url(../img/bg.jpg);
 }
-
-
-
-
-/*
-独自スタイル
-*/
 
 #contentContainer {
   padding: 60px 0;
@@ -311,7 +297,6 @@ body {
 }
 
 #mainNavigation {
-  /* ナビゲーション */
   position: relative;
   top: 60px;
 }
@@ -378,9 +363,6 @@ body {
 #mainNavigation .mainNavigation_trigger i {
   width: auto;
 }
-
-/* CSSで影を付ける */
-
 .shadow {
   position: relative;
   background:#fff;
@@ -429,11 +411,6 @@ body {
   behavior: url(PIE.htc);
 }
 
-
-
-/*
-responsive styles
-*/
 
 @media only screen and (min-width: 321px) and (max-width:768px) {
 
