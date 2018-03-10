@@ -230,7 +230,9 @@ div.position3{
 }
 
 div.position4{
-position: center;
+	left: 50%;
+	position: absolute;
+	
 }
 .zettai {
   position: absolute;
